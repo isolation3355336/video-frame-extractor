@@ -1,0 +1,16 @@
+# FFmpeg binaries are downloaded per machine, never committed:
+# ffmpeg.exe alone is ~105 MB, above GitHub's 100 MB per-file hard limit.
+bin/ffmpeg/*
+!bin/.gitkeep
+
+# Runtime / test artifacts
+.smoke-tmp/
+*_frames/
+node_modules/
+*.log
+npm-debug.log*
+
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store

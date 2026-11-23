@@ -1,0 +1,20 @@
+Third-party notice
+==================
+
+FFmpeg — https://ffmpeg.org/
+---------------------------
+This application contains no FFmpeg code. It drives a locally installed FFmpeg binary
+and (optionally) FFprobe through their command-line interface.
+
+The FFmpeg binaries are NOT part of this repository. They are either downloaded on
+demand by `tools/fetch-ffmpeg.ps1` or supplied by the user in `bin/ffmpeg/`.
+
+Most prebuilt Windows packages (including the "essentials" builds from gyan.dev and
+the gpl builds from BtbN) enable GPL components such as libx264/libx265, which makes
+those *binaries* GPL-licensed. If you redistribute a package that bundles them, you
+must comply with the GPL: ship the license text and make the corresponding FFmpeg
+source available (or point to it), as described at https://ffmpeg.org/legal.html.
+
+This project's own source code is licensed under the GNU General Public License v3.0;
+see LICENSE. The FFmpeg binaries keep their own license and are downloaded separately,
+so their licensing obligations stay with those binaries.

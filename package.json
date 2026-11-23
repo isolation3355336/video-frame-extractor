@@ -1,0 +1,24 @@
+{
+  "name": "video-frame-extractor",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Export every frame of a video as images — a local, zero-dependency web app powered by FFmpeg.",
+  "license": "GPL-3.0-only",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node tools/smoke.mjs"
+  },
+  "keywords": [
+    "ffmpeg",
+    "video",
+    "frames",
+    "frame-extraction",
+    "image-sequence",
+    "video-to-images",
+    "local-app"
+  ]
+}
